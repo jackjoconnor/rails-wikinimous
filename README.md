@@ -1,24 +1,28 @@
-# README
+## Background & Objectives
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+We will build an anonymous Rails Wiki App where anyone can create a new article
+or update an existing one.
 
-Things you may want to cover:
+## Specs
 
-* Ruby version
+### 1 - Model
 
-* System dependencies
+Generate the `Article` model through the right rails generator. It should have at least the following columns:
 
-* Configuration
+- `title`, as a `string`
+- `content`, as a `text`
 
-* Database creation
+Don't hesitate to crash test your new model in the `rails console`
 
-* Database initialization
+### 2 - Seed
 
-* How to run the test suite
+Add the [`faker` gem](https://github.com/stympy/faker) to your `Gemfile` and
+run `bundle install`.
 
-* Services (job queues, cache servers, search engines, etc.)
+Use this gem to generate 10 fake articles in
+`db/seeds.rb`.
 
-* Deployment instructions
+### 3 - Routes, Controller & Views
 
-* ...
+Generate your controller, and implement all 7 CRUD default actions to
+list, show, create, update and destroy an article.

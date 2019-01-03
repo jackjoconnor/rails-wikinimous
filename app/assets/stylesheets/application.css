@@ -13,3 +13,59 @@
  *= require_tree .
  *= require_self
  */
+
+
+/* Styles and Fonts */
+
+article {
+  font-family: Roboto;
+  font-weight: 300;
+  font-size: 120%;
+}
+
+article img {
+  max-width: 100%;
+}
+
+article h1,
+article h2,
+article h3,
+article h4,
+article h5,
+article h6 {
+  font-family: "Roboto Slab", sans-serif;
+  font-weight: 400;
+}
+
+/* Main navbar */
+.navbar-wagon {
+  font-size: 20px;
+  background: whitesmoke;
+  height: 50px;
+  padding: 0px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid lightgrey;
+  transition: all 0.3s ease;
+}
+
+/* Basic navbar item */
+.navbar-wagon-item {
+  cursor: pointer;
+  padding: 0 20px;
+}
+
+/* Navbar link */
+.navbar-wagon-link {
+  color: lightgrey;
+  font-size: 15px;
+}
+
+.navbar-wagon-link:hover {
+  color: #da552f;
+}
+
+a {
+  text-decoration: none !important;
+}
